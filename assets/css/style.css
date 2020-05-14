@@ -1,3 +1,68 @@
 * {
     box-sizing: border-box;
 }
+
+.black-nav{
+    width: 100%;
+    height: 32px;
+    background-color: black;
+}
+
+nav{
+    width: 100%;
+    height: 48px;
+    background: white;
+}
+
+.yellow {
+    background-color: #fd3;
+    height: 48px;
+}
+
+main article{
+    height: 30vh;
+    background-color: tomato;
+}
+
+.latest-itens {
+    width: 100%;
+    height: 72px;
+    background-color: teal;
+    border: 1px solid black;
+}
+
+.adversiment {
+    width: 100%;
+    height: 216px;
+    border: 1px solid black;
+    background-color: gray;
+}
+
+.app-item {
+    height: 672px;
+    border: 1px solid black;
+    background-color: #658528;
+}
+
+footer {
+    height: 283px;
+    background-color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
