@@ -49,14 +49,13 @@ a:hover {
 }
 
 i.icon {
-    background: url(../images/icons-sprite.svg);
+    background-image: url(../images/icons-sprite.svg);
     width: 16px;
     height: 16px;
-    display: block;
+    display: inline-block;
     background-size: 1296px 1296px;
-    opacity: 0.25;
 }
-i.icon:hover {
+i.icon.search:hover {
     opacity: 0.5;
 }
 i.icon.search {
@@ -109,7 +108,19 @@ nav {
 
 .yellow {
     background-color: #fd3;
-    height: 48px;
+    height: 60px;
+    color: black;
+    font-family: var(--font-maven);
+    font-size: 13px;
+    position: sticky;
+    top: 48px;
+    z-index: 9;
+}
+
+.yellow span {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .logo {
@@ -127,10 +138,90 @@ nav {
     height: 16px;
 }
 
-main article{
-    height: 30vh;
-    background-color: tomato;
+main{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-gap: 8px;
+    padding: 0px 8px;
+    height: 60vh;
 }
+
+
+main article{
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    color: white;
+    overflow: hidden;
+}
+
+main article span {
+    font-size: 11px;
+    font-family: var(--font-maven);
+}
+
+h2 {
+    font-family: var(--font-maven);
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.main-title {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    padding: 14px 20px;
+
+}
+
+.secondary-subtitle *{
+    padding: 0px 5px;
+}
+
+.time-icon{
+    background-position: -160px -160px;
+}
+
+.share-icon {
+    background-position: -912px -912px;
+}
+
+.trump .share-icon + span, .trump .share-icon{
+    display: none;
+}
+
+
+.mark {
+    background-image: url(../images/mark.jpg);
+}
+
+.shopify {
+    background-image: url(../images/shopify.jpg);
+}
+
+.trump {
+    background-image: url(../images/trump.png);
+}
+.cover-img {
+    display: none;
+    background: transparent url(../images/cover-gradient.png) no-repeat;
+    mix-blend-mode: lighten;
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.cover-gradient {
+    background: rgba(0,0,0,.25) url(../images/image-gradient.png) no-repeat;
+    background-size: 100% 100%;
+    background-position: 0% 0%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
 
 .latest-itens {
     width: 100%;
@@ -161,6 +252,9 @@ footer {
 header {
     display: grid;
     grid-template-columns: 106px 1fr;
+    position: sticky;
+    top: 0px;
+    z-index: 10;
 }
 
 
@@ -174,6 +268,21 @@ header {
     .logo { grid-row: auto / span 2; }
     .hamburger { display: none; }
     .nav-links ul { display: flex; }
+    .yellow {
+        top: 80px;
+        height: 30px;
+    }
+    main{
+        grid-template-columns: 65% 35%;
+    }
+    .mark {
+        grid-row: 1 / span 2;
+        height: 100%;
+
+    }
+    .mark h2{
+        font-size: 40px;
+    }
 }
 
 @media (min-width: 780px) {
@@ -187,12 +296,46 @@ header {
     header {
         grid-template-columns: 1fr;
     }
+
     .logo {
         display: none;
     }
+
+    .main-logo{
+        background-image: url(../images/logo.svg);
+        background-repeat: no-repeat;
+        width: 50%;
+        height: 112px;
+        margin: 24px;
+        position: absolute;
+        z-index: 9;
+    }
+
+    main {
+        height: 75vh;
+    }
+
+    .cover-img{
+        display: block;
+    }
+    
+    .trump .share-icon + span, .trump .share-icon{
+        display: inline;
+    }
+
+    .mark h2{
+        font-size: 56px;
+    }
+
+    .secondary-images h2{
+        font-size: 28px;
+    }
+    
 }
 
 
-@media (min-width: 1200px) {
-
+@media (min-width: 1600px) {
+    main {
+        height: 60vh;
+    }
 }
