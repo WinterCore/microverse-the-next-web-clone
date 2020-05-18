@@ -10,6 +10,7 @@
     box-sizing: border-box;
 }
 
+
 .flex { display: flex; }
 .flex.column { flex-direction: column; }
 .flex.justify-start { justify-content: flex-start; }
@@ -20,6 +21,8 @@
 .flex.align-start { align-items: flex-start; }
 .flex.align-center { align-items: center; }
 .flex.align-end { align-items: flex-end; }
+
+.relative { position: relative;}
 
 a {
     text-decoration: none;
@@ -52,6 +55,7 @@ picture.responsive img {
 section {
     margin-bottom: 75px;
 }
+
 
 .icon-wrapper {
     width: 48px;
@@ -288,7 +292,7 @@ h2 {
 
 footer {
     height: 283px;
-    background-color: black;
+    background-color: linear#131313;
 }
 
 
@@ -619,6 +623,83 @@ section  h2 {
     color: #000;
 }
 
+
+/* Latest Deal Section */
+
+.yellow-price {
+
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    background-image: url(../images/articles/yellow-price.svg);
+    width: 80px;
+    height: 80px;
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+    display: none;
+}
+
+.yellow-price span {
+    transform: rotate(45deg) translate(28px, 7px) ;
+    display: inline-block;
+}
+
+.price-deals h4{
+    margin-bottom: 6px;
+}
+
+.price-deals p {
+    font-family: var(--font-maven);
+    font-size: 16px;
+
+}
+
+.price-deals span{
+    color: #aaa;
+    text-decoration: line-through;
+    font-size: 13px;
+}
+
+
+/* Foooter Section Links */
+
+.facebook{background-position:-272px -272px;}
+.twitter{background-position:-1024px -1024px;}
+.youtube{background-position:-1280px -1280px;}
+.instagram{background-position:-416px -416px;}
+.pinterest{background-position:-672px -672px;}
+.wifi{background-position: -816px -816px;}
+.email{background-position:-576px -576px;}
+
+.links {
+    width: 325px;
+    padding: 36px 0px;
+    margin: auto;
+}
+
+.links li{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(51, 51, 51);
+    padding: 12px 12px;
+}
+
+.links li:hover {
+    background-color: black;
+    box-shadow: inset 0 0 0 2px rgb(51, 51, 51);
+}
+
+.nav-bottom {
+    width: 295px;
+    margin: auto;
+    font-size: 13px;
+    font-family: var(--font-play);
+}
+
+
+
 @media (min-width: 768px) {
     .black-nav {
         display: flex;
@@ -677,6 +758,10 @@ section  h2 {
 
     .articles-sections {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .yellow-price {
+        display: inline-block;
     }
 }
 
