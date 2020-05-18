@@ -50,6 +50,10 @@ picture.responsive img {
     max-width: inherit;
 }
 
+section {
+    margin-bottom: 75px;
+}
+
 .icon-wrapper {
     width: 48px;
     height: 48px;
@@ -301,11 +305,11 @@ header {
     max-width: 1192px;
     margin: 0 auto;
 }
-section > h2 {
+section h2 {
     font-size: 26px;
 }
 
-section > h2 a::after {
+section h2 a::after {
     content: "";
     background-image: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="none" stroke="%23F42" stroke-width="3" stroke-miterlimit="10" d="M4.75 1.5l6.5 6.5-6.5 6.5"/></svg>');
     height: 16px;
@@ -314,15 +318,15 @@ section > h2 a::after {
     margin-left: 6px;
 }
 
-section > h2 a:hover::after {
+section h2 a:hover::after {
     background-image: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="none" stroke="%23000" stroke-width="3" stroke-miterlimit="10" d="M4.75 1.5l6.5 6.5-6.5 6.5"/></svg>');
 }
 
-section > h2 a {
+section h2 a {
     color: var(--color-orange);
 }
 
-section > h2 a:hover {
+section h2 a:hover {
     color: #000;
 }
 
@@ -333,7 +337,7 @@ section > h2 a:hover {
     font-family: var(--font-maven);
 }
 
-.latest-news > h2 {
+section  h2 {
     margin-bottom: 24px;
 }
 
@@ -379,9 +383,12 @@ section > h2 a:hover {
 
 /* Adversiment Section */
 .latest-index {
-    margin: 20px;
     display: grid;
     grid-template-columns: 100%;
+}
+
+.latest-index-container {
+    margin: 20px;
 }
 
 .adversiment img {
@@ -452,6 +459,30 @@ section > h2 a:hover {
 
 .envelop {
     display: none;
+}
+
+.first-links{
+    border-right: 1px solid var(--color-orange);
+}
+
+.index-header li {
+    display: inline-block; 
+}
+
+.index-header li > a {
+    font-family: var(--font-maven);
+    color: var(--color-orange);
+    font-size: 16px;
+    padding-right: 10px;
+
+}
+
+.space-border {
+    padding-left: 10px;
+}
+
+.index-header {
+    margin-bottom: 25px;
 }
 
 
@@ -573,8 +604,19 @@ section > h2 a:hover {
         grid-template-columns: repeat(4, 1fr);
         gap: 21px;
     }
+
+    .index-header{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .index-header ul{
+        padding-top: 10px;
+    }
+
     
 }
+
 
 
 @media (min-width: 1600px) {
