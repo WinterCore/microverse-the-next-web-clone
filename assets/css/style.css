@@ -3,6 +3,8 @@
     --font-play: 'Play', sans-serif;
 
     --color-orange: #f42;
+    --color-pink: rgba(255,68,34,.08);
+
 }
 
 * {
@@ -83,6 +85,16 @@ i.icon.search:hover {
 i.icon.search {
     background-position: -848px -848px;
 }
+
+.icon-tag {
+    background-position: -976px -976px;
+}
+
+.icon-case {
+    background-position: -48px -48px;
+}
+
+
 
 .hamburger span:first-child { transform: translateY(6px) }
 .hamburger span:last-child { transform: translateY(-6px); }
@@ -254,9 +266,15 @@ h2 {
 
 .adversiment {
     width: 100%;
-    height: 216px;
-    border: 1px solid black;
-    background-color: gray;
+    background-color: #FFFAF8;
+}
+
+.adversiment-text p{
+    color: #555555;
+}
+
+.adversiment-text span{
+    color: #AAA;
 }
 
 .app-item {
@@ -359,6 +377,84 @@ section > h2 a:hover {
 }
 
 
+/* Adversiment Section */
+.latest-index {
+    margin: 20px;
+    display: grid;
+    grid-template-columns: 100%;
+}
+
+.adversiment img {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 60px;
+
+}
+.red {
+    background-color:var(--color-orange);
+    height: 45px; 
+    color: #fff;
+    font-size: 18px;
+    font-weight: 900;
+}
+
+
+.pink {
+    height: 60px;
+    background-color: var(--color-pink);
+}
+
+.adversiment {
+    position: relative;
+}
+
+.red, .pink {
+    padding-left: 80px;
+}
+
+.adversiment-info {
+    padding-left: 20px;
+    height: 83px;
+    border-bottom: 1px solid rgba(255,68,34,.25);
+    font-family: var(--font-maven);
+    font-size: 13px;
+}
+
+.price {
+    font-size: 18px;
+    font-weight: 900;
+    font-family: var(--font-maven);    
+}
+.adversiment-text{
+    padding-left: 20px;
+    font-family: var(--font-maven);
+    font-size: 13px;
+    height: 60px;
+}
+
+.icon-tag, .icon-case {
+    padding: 0px 13px;
+}
+
+.adversiment-info p {
+    display: flex;
+    align-items: center;
+    padding-bottom: 13px;
+}
+
+.seed {
+    font-family: var(--font-play);
+    font-size: 11px;
+    padding-top: 7px;
+    opacity: .5;
+}
+
+.envelop {
+    display: none;
+}
+
+
 @media (min-width: 768px) {
     .black-nav {
         display: flex;
@@ -408,6 +504,11 @@ section > h2 a:hover {
         transform: none;
         max-width: 100%;
         height: auto;
+    }
+
+    .latest-index {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 21px;
     }
 }
 
@@ -463,6 +564,15 @@ section > h2 a:hover {
         grid-gap: 20px;
         gap: 20px;
     }
+
+    .envelop {
+        display: inline-block;
+    }
+
+    .latest-index {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 21px;
+    }
     
 }
 
@@ -472,3 +582,6 @@ section > h2 a:hover {
         height: 60vh;
     }
 }
+
+
+
