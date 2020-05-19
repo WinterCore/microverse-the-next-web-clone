@@ -685,6 +685,15 @@ footer {
   background-color: black;
 }
 
+.copyright-container {
+  width: 242px;
+  text-align: center;
+}
+
+.powered {
+  display: block;
+}
+
 .black-nav a:hover {
   color: #fff;
 }
@@ -793,6 +802,15 @@ section h2 a:hover::after {
   }
 
   .yellow-price {
+    display: inline-block;
+  }
+
+  .copyright-container {
+    width: 100%;
+    text-align: center;
+  }
+
+  .powered {
     display: inline-block;
   }
 }
