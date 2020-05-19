@@ -22,7 +22,7 @@ Screenshot for screens bigger than 1023px
 
 ## Live Demo
 
-[Live Demo Link](https://rawcdn.githack.com/WinterCore/microverse-the-next-web-clone/65f9397b94466e15c5f0b48d8120962ad21f24f5/index.html)
+[Live Demo Link](https://raw.githack.com/WinterCore/microverse-the-next-web-clone/develop/index.html)
 
 
 ## Getting Started
