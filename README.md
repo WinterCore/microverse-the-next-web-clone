@@ -4,13 +4,13 @@ This project consists of replicating the The Next Web website putting emphasis o
 
 Screenshot for screens < 782px
 
-![screenshot](./assets/images/screenshot768.png) !
+![screenshot](./assets/images/screenshot768.png)
 
 Screenshot for screens between 782px and 1023px
 
-[screenshot](./assets/images/screenshot1023.png) 
+![screenshot](./assets/images/screenshot1023.png) 
 
-Screenshot for creens bigger than 1023px
+Screenshot for screens bigger than 1023px
 
 ![screenshot](./assets/images/screenshotbigger.png)
 
@@ -22,7 +22,7 @@ Screenshot for creens bigger than 1023px
 
 ## Live Demo
 
-[Live Demo Link](https://WinterCore.github.iomicroverse-the-next-web-clone/)
+[Live Demo Link](https://rawcdn.githack.com/WinterCore/microverse-the-next-web-clone/65f9397b94466e15c5f0b48d8120962ad21f24f5/index.html)
 
 
 ## Getting Started
