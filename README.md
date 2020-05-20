@@ -1,8 +1,20 @@
 # The Next Web Clone
 
-![screenshot](./app_screenshot.png)
+This project consists of replicating the The Next Web website putting emphasis on how it behaves differently depending on the size of the screen where the website is rendered.
 
-This is just a clone of the homepage of [the "TheNextWeb" website](https://thenextweb.com/)
+Screenshot for screens < 782px
+
+![screenshot](./assets/images/screenshot768.png)
+
+Screenshot for screens between 782px and 1023px
+
+![screenshot](./assets/images/screenshot1023.png) 
+
+Screenshot for screens bigger than 1023px
+
+![screenshot](./assets/images/screenshotbigger.png)
+
+
 
 ## Built With
 
@@ -10,7 +22,7 @@ This is just a clone of the homepage of [the "TheNextWeb" website](https://thene
 
 ## Live Demo
 
-[Live Demo Link](https://WinterCore.github.iomicroverse-the-next-web-clone/)
+[Live Demo Link](https://wintercore.github.io/microverse-the-next-web-clone/)
 
 
 ## Getting Started
